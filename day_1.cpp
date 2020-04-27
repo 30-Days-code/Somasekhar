@@ -22,21 +22,42 @@ class book
   char author[100];
   char publisher[100];
   int tot_cop,left_cop; //total copis and left copies.
-  
-  public:
-  
-  
-  
+
+public:
+	book()
+	{
+	char book_name[100]={"C++_Programming"}; //string for name
+	 int book_number=1; 
+	 float price=100.25;
+	 char author[100]={"VENKAT"};
+	 char publisher[100]={"ARYAN_PUBLICATIONS"};
+	 int tot_cop=3,left_cop=2; //total copis and left copies.
+	}
+
+	void display()
+		{
+			cout<<"Here are the details:\n";
+			cout<<"NAME: "<<book_name<<"\nBOOK NUMBER: "<<book_number<<"\nPRICE: "<<price<<"\nPUBLISHER: "<<publisher<<"\n";
+		}
+
+	void availability()
+	{
+	cout<<"The available copies are: "<<left_cop;
+	}
+
+
+
+
 };
 
 int main()
 {
-    int s;//for the switch follow
-    
-    cout<<"Hi User. Hope you are maintaining social distance.";
-    cout<<"\nEnter 1 to \n 2 to \n 3 to \n 4 to \n";
-    cin>>s;
-    switch
+    book b1;
+
+	b1.display();
+	b1.availability();
+
 
     return 0;
 }
+
