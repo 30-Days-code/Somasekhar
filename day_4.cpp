@@ -22,7 +22,7 @@ class encode
     {
         key=0;
         cout<<"\nEnter the line\n(please input this character '~' after \nyou completed your text without space): ";
-        cin>>(input);
+        gets(input);
     }
     
     void search()       //to know till when the user input ends
