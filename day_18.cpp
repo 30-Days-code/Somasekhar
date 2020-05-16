@@ -1,7 +1,7 @@
 // Write a program in C++ use operator overloading for creating a simple calculator 
 // program having functions for addition, subtraction, multiplication, division, 
 // and modulus.
-
+// https://www.youtube.com/watch?v=BO2KagRMS3M  (Reference.)
 #include <stdio.h>
 #include<iostream>
 using namespace std;
@@ -17,7 +17,7 @@ class number
     void print()
     {cout<<"\nResult: "<<num;}
     
-    number operator +(number ob)
+    number operator +(number ob)                                    //syntax
     {
         number temp;
         temp.num=num+ob.num;
@@ -54,7 +54,7 @@ class number
 int main()
 {
     number n1,n2,n3;
-    n1.enter();n2.enter();
+    n1.enter();n2.enter();                              //inputing the numbers    
     int s;                                              //for switch case
     cout<<"\n Enter \n1 to add\n2 to subtract\n3 to multiply\n4 to divide\n5 for modulus\n";
     cin>>s;
