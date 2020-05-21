@@ -60,4 +60,4 @@ int main()
 
     return 0; 
 } 
-This answer is taken from https://github.com/30-Days-code/Aryan/blob/master/Question23.cpp
+//This answer is taken from https://github.com/30-Days-code/Aryan/blob/master/Question23.cpp
